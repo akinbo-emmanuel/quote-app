@@ -2,8 +2,10 @@ import { FC } from 'react'
 
 const Navbar: FC = () => {
   return (
-    <nav className='font-bold text-3xl'>
-        <p>Navbar</p>
+    <nav className="bg-gray-800 text-white p-4">
+        <div>Search Field</div>
+        <div>Filter Dropdown</div>
+        <div>Sort Dropdown</div>
     </nav>
   )
 }
