@@ -1,30 +1,81 @@
-# React + TypeScript + Vite
+# Quote App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web application for displaying and managing quotes. Users can view a collection of quotes fetched from an external API, filter quotes by author or date, and sort them by ID or author. The app is built with ReactJS, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+![Quote App Preview](/path/to/preview/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Fetches quotes from an external API and displays them on the page.
+- Allows users to filter quotes by author or date.
+- Supports sorting quotes by ID or author.
+- Dark mode support for improved readability.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository to your local machine:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+   ```bash
+   git clone https://github.com/your-username/quote-app.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd quote-app
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+2. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the app.
+
+## Technologies Used
+
+- ReactJS - A JavaScript library for building user interfaces.
+- TypeScript - A statically typed superset of JavaScript.
+- Tailwind CSS - A utility-first CSS framework for building custom designs.
+
+## Folder Structure
+
+```
+quote-app/
+│
+├── src/
+│   ├── components/         # React components
+│   ├── api/                # API integration
+│   ├── assets/             # Images, fonts, etc.
+│   └── App.tsx             # Main application component
+│
+├── public/                  # Static assets
+│   ├── index.html           # HTML template
+│   └── favicon.ico          # Favicon
+│
+├── package.json             # Project dependencies
+├── tsconfig.json            # TypeScript configuration
+└── README.md                # Project documentation
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request for any improvements or features you'd like to add.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Credits
+
+- [Quotable API](https://github.com/lukePeavey/quotable) - API used for fetching quotes.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
