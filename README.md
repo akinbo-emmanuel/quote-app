@@ -2,7 +2,7 @@
 
 A simple web application for displaying and managing quotes. Users can view a collection of quotes fetched from an external API, filter quotes by author or date, and sort them by ID or author. The app is built with ReactJS, TypeScript, and Tailwind CSS.
 
-![Quote App Preview](/path/to/preview/image.png)
+![Quote App Preview](https://tinyurl.com/mdru2tp7)
 
 ## Features
 
